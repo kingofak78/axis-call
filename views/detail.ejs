@@ -59,19 +59,7 @@
       </div>
     <% } %>
 
-    <!-- SUCCESS DATA SECTION -->
-    <% if (success) { %>
-      <div class="card">
-        <h3>Success Information</h3>
-        <p><strong>DOB:</strong> <%= success.dob %></p>
-        <p><strong>Profile Password:</strong> <%= success.profilePassword %></p>
-        <p><strong>Submitted At:</strong> <%= new Date(success.submittedAt).toLocaleString() %></p>
-      </div>
-    <% } else { %>
-      <div class="card">
-        <p><strong>Success details not available</strong></p>
-      </div>
-    <% } %>
+
 
     <a href="/api/device/dashboard">
       <button class="dashboard-btn">Go to Dashboard</button>
